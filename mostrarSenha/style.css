@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .password-field {
+    position: relative;
+    width: 300px;
+    height: 40px;
+  }
+  
+  .password-field input {
+    letter-spacing: 2px;
+    font-size: 24px;
+    padding: 5px 40px 5px 5px;
+    width: 100%;
+    margin-right: 10px;
+  }
+  
+  .password-field-btn {
+    background: transparent;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    width: 40px;
+    height: 100%;
+  }
+  
+  .icon-eye {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    line-height: 0px;
+  }
+  
+  .eye-opened {
+    display: none;
+  }
+  
+  .password-field.show-pass .eye-closed {
+    display: none;
+  }
+  
+  .password-field.show-pass .eye-opened {
+    display: block;
+  }
+  
+  svg {
+    stroke: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+  }
+  
